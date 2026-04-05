@@ -7,9 +7,11 @@ export default function Home() {
       <div style={styles.content}>
         <Image
           src="/images/icon-cold-hand-capper.png"
-          alt="My First Next App"
-          width={200}
-          height={80}
+          alt="chc_logo"
+          width={100}
+          height={125}
+          // style={{ objectFit: "cover" }}       ONLY PAYS ATTENTION TO WIDTH
+          // style={{ width: "100px", height: "100px", objectFit: "fill" }}
         />
         <p>This is my homepage</p>
         <Link href="/about">Go to About</Link>
