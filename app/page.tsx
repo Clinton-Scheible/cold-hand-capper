@@ -8,15 +8,14 @@ export default function Home() {
         <Image
           src="/images/icon-cold-hand-capper.png"
           alt="chc_logo"
-          width={100}
-          height={125}
-          // style={{ objectFit: "cover" }}       ONLY PAYS ATTENTION TO WIDTH
-          // style={{ width: "100px", height: "100px", objectFit: "fill" }}
+          width={300}
+          height={200}
+          style={{ height: "20%", objectFit: "fill" }}
         />
         <p>This is my homepage</p>
         <Link href="/about">Go to About</Link>
       </div>
-    </header>
+</header>
   );
 }
 
@@ -25,12 +24,13 @@ const styles = {
     backgroundColor: "blue",
     color: "white",
     width: "100%",
+    height: "175px",
     padding: "20px 0",
     display: "flex",
     justifyContent: "center",
   },
   content: {
-    textAlign: "center",
+    textAlign: "center" as const,
   },
 };
 /*
