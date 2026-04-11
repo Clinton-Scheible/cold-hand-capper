@@ -10,7 +10,7 @@ export default function Home() {
           alt="chc_logo"
           width={300}
           height={200}
-          style={{ height: "20%", objectFit: "fill" }}
+          style={{ height: "50%", width: "auto",  objectFit: "fill" }}
         />
         <p>This is my homepage</p>
         <Link href="/about">Go to About</Link>
@@ -25,12 +25,11 @@ const styles = {
     color: "white",
     width: "100%",
     height: "175px",
-    padding: "20px 0",
     display: "flex",
     justifyContent: "center",
   },
   content: {
-    textAlign: "center" as const,
+    textAlign: "left" as const,
   },
 };
 /*
