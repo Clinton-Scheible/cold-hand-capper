@@ -28,6 +28,7 @@ const styles = {
     width: "100%",
     height: "100%",
     padding: "20px 0",
+
     justifyContent: "center",
     alignItems: "center",
   },
