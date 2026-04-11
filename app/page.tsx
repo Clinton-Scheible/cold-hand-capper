@@ -8,29 +8,32 @@ export default function Home() {
         <Image
           src="/images/icon-cold-hand-capper.png"
           alt="chc_logo"
-          width={300}
+          width={100}
           height={200}
-          style={{ height: "20%", objectFit: "fill" }}
+          style={{ justifyContent: "center", objectFit: "fill" }}
         />
         <p>This is my homepage</p>
-        <Link href="/about">Go to About</Link>
+        <Link style={{ color: "red" }} href="/about">
+          Go to About
+        </Link>
       </div>
-</header>
+    </header>
   );
 }
 
 const styles = {
   header: {
-    backgroundColor: "blue",
+    backgroundColor: "purple",
     color: "white",
     width: "100%",
-    height: "175px",
+    height: "100%",
     padding: "20px 0",
-    display: "flex",
     justifyContent: "center",
+    alignItems: "center",
   },
   content: {
-    textAlign: "center" as const,
+    display: "flex",
+    color: "blue",
   },
 };
 /*
