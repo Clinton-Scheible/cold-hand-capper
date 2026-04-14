@@ -8,11 +8,17 @@ export default function Home() {
         <Image
           src="/images/icon-cold-hand-capper.png"
           alt="chc_logo"
-          width={100}
-          height={200}
-          style={{ justifyContent: "center", objectFit: "fill" }}
+          width={60}
+          height={60}
+          style={{
+            maxHeight: "80px",
+            height: "100%",
+            width: "auto",
+            objectFit: "contain",
+          }}
         />
-        <p>This is my homepage</p>
+      </div>
+      <div>
         <Link style={{ color: "red" }} href="/about">
           Go to About
         </Link>
@@ -23,20 +29,20 @@ export default function Home() {
 
 const styles = {
   header: {
-    backgroundColor: "purple",
+    backgroundColor: "blue",
     color: "white",
+    display: "flex",
     width: "100%",
-    height: "100%",
-    padding: "20px 0",
-
-    justifyContent: "center",
+    height: "15vh",
+    position: "relative",
+    padding: "20px 20px",
+    justifyContent: "space-between",
     alignItems: "center",
   },
   content: {
-    display: "flex",
-    color: "blue",
+    textAlign: "left" as const,
   },
-};
+} as const;
 /*
 // app/page.tsx
 import Link from "next/link";
